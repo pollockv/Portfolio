@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Virginia Pollock - Projects</title>
+    </head>
+<body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <header id="main">
+    <div class="transbox">
+  <h1>VIRGINIA POLLOCK</h1>
+
+  <p>Below is a gallery of my noteworthy experiences and designs. Subject to change as I gain new collaborations and experiences.</p> </div>
+  </header>
+  <div class="flexbox-container" role="main">
+      <img src="images/afb1.jpg" alt="Picture of Virginia">
+    <button class="accordion active">Alternative Fall Break 2019</button>
+<div class="panel" style="display: block;">
+  <div class="gallery-header1">
+    <p>Over Fall Break, 13 students were split into groups and sent into Detroit to assist local non-profits with Data Analysis and UX projects.
+      With a team of two other students, I had the chance to assist non-profit Arts & Scraps discover new ways to manage and visualize their data. </p>
+
+    <p>Within two days we were able to collaborate with the client and create a working deliverable that their volunteers can use to input and visualize feedback responses.
+      This will help Arts & Scraps quantify their impact, which will in turn help them qualify for grants. Feel free to contact me for more information about the project specifics.</p>
+
+  </div>
+  <div class="images-flexbox">
+    <img src="images/afb2.JPG" alt="Alternative Fall Break 2019">
+    <img src="images/afb3.JPG" alt="Alternative Fall Break 2019">
+    <img src="images/afb4.JPG" alt="Alternative Fall Break 2019">
+    <img src="images/afb5.JPG" alt="Alternative Fall Break 2019">
+    </div>
+    <div class="gallery-header1">
+      <button class="small-button">Let's Talk!</button>
+    </div>
+</div>
+
+<button class="accordion">Java Linked List Project</button>
+<div class="panel">
+
+  <p>Demonstrates an understanding of the Linked List data type, nodes, and their functionality. It is essentially a component of a Mathematics solving software.</p>
+  <p>Program assumes all powers and coefficients are integers, all polynomials represent a function of x, and that all polynomials are input in decending order (ex: "4x2 + 2x + 3")</p>
+  <div class="images-flexbox">
+    <img src="images/java.png" alt="Java Polynomial Project">
+  </div>
+</div>
+
+<button class="accordion">Rock, Paper, Scissors, Lizard, Spock</button>
+<div class="panel">
+  <p>A game of Rock Paper Scissors (...Lizard Spock!) that shows comprehension of the Comparable interface and enums.</p>
+  <p>The program also had a Big O Analysis portion, meant to measure efficiency.</p>
+  <p>Developed with NetBeans.</p>
+  <div class="images-flexbox">
+    <img src="images/bigo.png" alt="Big O Analysis">
+  </div>
+</div>
+<button class="accordion">Workday Design Jam</button>
+<div class="panel">
+  <p>During this 4 hour design jam, we were tasked with creating a Journey Map of the typical University of Michigan student’s registration process, from picking their courses to finalizing their decision. </p>
+  <p>This design jam was centered around conducting interviews with the users, our students, and their experiences with the platform.</p>
+    <div class="images-flexbox">
+    <img src="images/workday1.jpeg" alt="Workday Presentation">
+    <img src="images/workday2.jpeg" alt="Design Jam Brainstorming">
+  </div>
+</div>
+</div>
+  <footer>
+    <a href="https://www.linkedin.com/in/virginia-pollock-ab27a6158/" aria-label="Linkedin Link"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/giniapollock/" aria-label="Instagram Link"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/pollockv" aria-label="Github Link"><i class="fa fa-github"></i></a>
+    <a href="mailto:pollockv@umich.edu" aria-label="Email Link"><i class="fa fa-envelope"></i></a>
+  </footer>
+</body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</html>
